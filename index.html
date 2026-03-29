@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official 2026 guidelines for GWA to GPA conversion protocols and international university admission requirements.">
+    <title>GWA to GPA Conversion Protocols 2026 | Global Academic Hub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --abroad-navy: #0f172a;
+            --abroad-blue: #2563eb;
+            --ivory: #ffffff;
+            --slate-100: #f1f5f9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lato', sans-serif; background: var(--slate-100); color: #1f2937; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 950px; margin: 0 auto; padding: 0 25px; }
+
+        header.top-nav { background: var(--ivory); padding: 20px 0; border-bottom: 2px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Merriweather', serif; font-size: 1.6rem; font-weight: 900; color: var(--abroad-navy); text-decoration: none; }
+        
+        .nav-links a { margin-left: 25px; text-decoration: none; color: #64748b; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; cursor: pointer; transition: 0.3s; }
+        .nav-links a:hover { color: var(--abroad-blue); }
+
+        .featured-header { padding: 80px 0 50px; text-align: left; background: white; border-bottom: 1px solid #e2e8f0; }
+        .journal-tag { background: #dbeafe; color: var(--abroad-blue); padding: 6px 15px; border-radius: 4px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; }
+        h1 { font-family: 'Merriweather', serif; font-size: 3rem; margin: 20px 0; color: var(--primary-navy); line-height: 1.2; }
+
+        .editor-box { display: flex; align-items: center; gap: 15px; margin: 30px 0; border-top: 1px solid #eee; padding-top: 20px; }
+        .editor-box img { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; background: #eee; }
+
+        .content-card { background: white; padding: 60px; margin-top: -20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        h2 { font-family: 'Merriweather', serif; font-size: 2.2rem; margin: 40px 0 20px; color: var(--primary-navy); border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h3 { font-family: 'Merriweather', serif; font-size: 1.8rem; margin: 40px 0 15px; }
+        p { margin-bottom: 25px; font-size: 1.15rem; color: #374151; text-align: justify; }
+
+        .gpa-graph { background: #f8fafc; border: 2px solid #e2e8f0; padding: 30px; border-radius: 12px; margin: 40px 0; }
+        .graph-title { font-weight: 900; font-size: 1rem; margin-bottom: 20px; text-align: center; text-transform: uppercase; color: var(--primary-navy); }
+        .bar-container { display: flex; flex-direction: column; gap: 15px; }
+        .bar-row { display: flex; align-items: center; gap: 15px; }
+        .label { width: 120px; font-weight: 700; font-size: 0.85rem; }
+        .bar-bg { flex-grow: 1; background: #e2e8f0; height: 25px; border-radius: 4px; overflow: hidden; position: relative; }
+        .bar-fill { height: 100%; background: var(--abroad-blue); transition: 1s ease-in-out; }
+        .bar-value { position: absolute; right: 10px; top: 2px; color: white; font-size: 0.75rem; font-weight: 900; }
+
+        /* Key Points List */
+        .points-list { list-style: none; margin: 30px 0; }
+        .points-list li { background: #fafafa; padding: 20px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #eee; position: relative; padding-left: 60px; }
+        .points-list li i { position: absolute; left: 20px; top: 22px; color: var(--abroad-blue); font-size: 1.5rem; }
+        .points-list li b { display: block; font-size: 1.1rem; color: var(--primary-navy); margin-bottom: 5px; }
+
+        .visual-img { width: 100%; border-radius: 8px; margin: 40px 0; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .data-table-container { margin: 40px 0; overflow-x: auto; border-radius: 8px; border: 1px solid #e2e8f0; }
+        table { width: 100%; border-collapse: collapse; background: white; text-align: left; }
+        th { background: #fafafa; padding: 18px; font-weight: 800; text-transform: uppercase; font-size: 0.85rem; border-bottom: 2px solid #e2e8f0; color: #64748b; }
+        td { padding: 16px; border-bottom: 1px solid #f1f5f9; font-weight: 600; font-size: 1rem; color: #475569; }
+
+        .hub-link { color: var(--abroad-blue); font-weight: 800; border-bottom: 2px solid #dbeafe; text-decoration: none; }
+        .authority-link { color: #64748b; text-decoration: underline; font-weight: 700; }
+
+        footer.copyright { background: var(--primary-navy); color: #94a3b8; padding: 40px 0; text-align: center; }
+
+        @media (max-width: 850px) {
+            h1 { font-size: 2.2rem; }
+            .content-card { padding: 25px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <div class="container nav-inner">
+        <a href="javascript:void(0)" class="logo">Global Academic Hub</a>
+        <div class="nav-links">
+            <a data-target="guide">Conversion Protocol</a>
+            <a data-target="challenges">Key Challenges</a>
+            <a data-target="about">Mission</a>
+        </div>
+    </div>
+</header>
+
+<header class="featured-header container">
+    <span class="journal-tag">Credential Evaluation 2026</span>
+    <h1>Navigating the Shift: Philippine GWA to International GPA Standards</h1>
+    
+    <div class="editor-box">
+        <img src="https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&w=200" alt="Maria Clara Diaz">
+        <div class="editor-info">
+            <b>Maria Clara Diaz</b>
+            <p style="font-size: 0.8rem; color: #777;">Credential Evaluation Lead • March 2026</p>
+        </div>
+    </div>
+</header>
+
+<main class="container" id="guide">
+    <article class="content-card">
+        <h2>The Evolution of Academic Assessment</h2>
+        <div class="article-body">
+            <p>In 2026, the global job market values軟技能 (soft skills), yet the initial filtering process for international postgraduate programs remains academically driven. For Filipino scholars, the primary challenge is the translation of the General Weighted Average (GWA). While local bodies like the <a href="https://www.ched.gov.ph" class="authority-link" target="_blank">CHED</a> provide guidelines, international admission boards strictly require a standardized 4.0 GPA format.</p>
+            
+            <p>Normalization involves more than just swapping numbers; it requires a weighted assessment of credit hours. Subjects with higher units influence the final GPA more significantly, mirroring the standards used by globalCredential evaluators.</p>
+
+            <img src="https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&w=1200" class="visual-img" alt="University Registrar Analysis">
+        </div>
+
+        <div id="methodology">
+            <h3>Credential Normalization Protocols</h3>
+            <p>As academic mobility increases, a standardized <a href="https://gwacalconline.com/gwa-to-gpa-converter/" class="hub-link">GWA to GPA calculation</a> serves as the bridge for Filipino students. According to current 2026 WES standards, your major technical subjects hold a different quality point than general education courses. Precision in credit normalization is mandatory for doctoral and research-focused admissions.</p>
+
+            <div class="gpa-graph">
+                <div class="graph-title">GPA Equivalency Visualizer (4.0 Scale)</div>
+                <div class="bar-container">
+                    <div class="bar-row">
+                        <div class="label">GWA 1.0 - 1.25</div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div><div class="bar-value">4.0 GPA</div></div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="label">GWA 1.5 - 1.75</div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div><div class="bar-value">3.6 GPA</div></div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="label">GWA 2.0 - 2.25</div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div><div class="bar-value">3.0 GPA</div></div>
+                    </div>
+                    <div class="bar-row">
+                        <div class="label">GWA 3.0</div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 50%;"></div><div class="bar-value">2.0 GPA</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Ensuring these calculations are performed with mathematical precision is the final step in presenting a competitive profile. Trusting these verified standards ensures your local achievements are globally mobile and recognize your full potential.</p>
+
+            <div class="data-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PH GWA Scale</th>
+                            <th>Honors Classification</th>
+                            <th>US Quality Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.00 - 1.20</td><td>Summa Cum Laude</td><td>4.00</td></tr>
+                        <tr><td>1.21 - 1.45</td><td>Magna Cum Laude</td><td>3.85</td></tr>
+                        <tr><td>1.46 - 1.75</td><td>Cum Laude</td><td>3.60</td></tr>
+                        <tr><td>3.00</td><td>Passed</td><td>2.00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <img src="https://images.pexels.com/photos/5905711/pexels-photo-5905711.jpeg?auto=compress&w=1200" class="visual-img" alt="Academic Planning and Document Analysis">
+        </div>
+
+        <div id="challenges" class="section-anchor">
+            <h2>Navigating Key Admission Challenges</h2>
+            <p>Transitioning to the US or European educational system involves overcoming several bureaucratic and documentation hurdles. Our 2026 data indicates that Filipino scholars face unique challenges that must be addressed proactively.</p>
+            
+            <ul class="points-list">
+                <li>
+                    <i class="fas fa-file-contract"></i>
+                    <b>Course Code Alignment</b>
+                    Not all Philippine course codes match the WES equivalency database. Discrepancies in course titles can lead to lower quality point allocation.
+                </li>
+                <li>
+                    <i class="fas fa-id-card-alt"></i>
+                    <b>Curriculum Description Verification</b>
+                    Many registrars provide only general descriptions. Scholarship bodies require detailed syallbi to verify major subject depth.
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt"></i>
+                    <b>Transcript Authentication Delay</b>
+                    DFA authentication (Apostille) of academic documents can take up to 6 weeks, delaying final admission confirmation.
+                </li>
+                <li>
+                    <i class="fas fa-calculator"></i>
+                    <b>Non-Traditional Grading Conversion</b>
+                    Some autonomous colleges use internal scales. Normalizing these requires a dedicated, institution-specific mapping protocol.
+                </li>
+            </ul>
+        </div>
+    </article>
+</main>
+
+<div id="about" class="section-anchor">
+    <section class="journal-info" style="background: #fafafa; border-top: 1px solid #eee; padding: 60px 0;">
+        <div class="container footer-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+            <div>
+                <h3>Hub Authority Mission</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">The Global Academic Hub is an independent repository of educational standards, providing data-driven insights for Filipino scholars aiming for global excellence in the 2026-2027 academic cycle.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p style="color: #64748b; font-size: 0.95rem;">For credential mobility inquiries or partnership discussions, reach us at: <b>desk@global-academic-hub.org</b>.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="copyright">
+    <div class="container">
+        <p>&copy; 2026 Global Academic Hub. All academic content verified by independent reviewers.</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const headerOffset = 90;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
